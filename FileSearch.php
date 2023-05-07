@@ -30,7 +30,7 @@ if ($searchResult== null){ //проверка есть ли в массие чт
 }else{
     $countArr2 = count($searchResult);
     for ($i=0;$i<$countArr2;$i++){
-        if (filesize($searchResult[$i])){
+        if (filesize($searchResult[$i])){ //проверка пустой ли файл
          print_r($searchResult[$i]);
         }
     }
